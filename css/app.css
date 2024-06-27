@@ -7,7 +7,7 @@
 body {
   background: #000;
   width: 100%;
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 
 nav{
@@ -70,7 +70,7 @@ main {
 }
 
   #bkg-index-main {
-    background: url('../assets/images/22.png');
+    background: url('../assets/images/47.png');
     background-size: cover;
     position: relative;
   }
