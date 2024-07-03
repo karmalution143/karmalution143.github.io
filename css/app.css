@@ -29,8 +29,8 @@ nav{
   }
 
   a:hover {
-    color: #9f948f;
-    text-decoration: underline;
+    color: #ab806c;
+    font-weight: 500;
   }
 
 header {

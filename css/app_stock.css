@@ -5,7 +5,9 @@
   scroll-behavior: smooth;
 }
 body {
-  background: #333;
+  width: 100%;
+  height: auto;
+  background: #888;
   font-size: 1.2em;
 }
 header {
@@ -28,7 +30,7 @@ header {
     background: #666;
   }
     a {
-      color: #fff;
+      color: #333;
       font-size: 2.1em;
       margin: 0 21px;
       font-family: 'Poppins', sans-serif;
