@@ -96,11 +96,3 @@ header {
     bottom: 20px;
     right: 100px;
   }
-  @media (min-width: 601px) and (max-width: 1200px) {
-    nav {
-        background: #e64f18;
-    }
-    a {
-      font-size: 1.1em;
-    }
-  }

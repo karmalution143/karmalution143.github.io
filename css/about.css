@@ -4,49 +4,92 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-header {
-  width: 100%;
-  height: 420px;
-  background: url('../assets/images/sunset.jpeg');
-  background-size: cover;
-  background-position: 0 70%;
-  padding: 100px;
-}
-nav {
-  display: flex;
-  justify-content: center;
-  background: linear-gradient(to bottom, #EF6543, #333);
-  padding: 10px;
-}
-nav a {
-  margin: 0 50px;
-  font-family: "Roboto" sans-serif;
-  text-decoration: none;
-  font-size: 2.4em;
-  color: #333;
-}
-nav a:hover {
-  margin: 0 50px;
-  font-family: "Roboto" sans-serif;
-  text-decoration: none;
-  font-size: 2.4em;
-  font-style: italic;
-  color: #333;
-}
 body {
   width: 100%;
-  min-height: 700px;
-  padding: 30px 100px;
-  background: linear-gradient(to bottom, #EF6543, #333);
+  /* min-height: 700px; */
   font-size: 1.5em;
 }
-
+#grid {
+  display: grid;
+  width: 100%;
+  /* grid-gap: 3px; */
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+    "nav nav nav nav nav nav nav nav nav nav nav nav"
+    "hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr"
+    "abt abt abt abt abt abt abt abt abt abt abt abt"
+}
+  
+  nav {
+    display: -ms-inline-grid;
+    grid-area: nav;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 8;
+    text-align: center;
+    background: linear-gradient(#f8c07b 15%, #fff 85%);
+    padding-top: 25px;
+  }
+    nav a {
+      color: #000;
+      text-decoration: none;
+      font-size: 2.5rem;
+      margin: 0 55px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+    nav a:hover {
+      color: #ab806c;
+      font-weight: 500;
+    }
+    nav h1 {
+      display: inline;
+      margin: 0 55px;
+      color: #000;
+      text-decoration: none;
+      font-size: 2.5rem;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+    nav h1:hover {
+      color: #ab806c;
+      font-weight: 500;
+    }
+    header {
+      display: grid;
+      grid-area: hdr;
+      position: relative;
+      width: 100%;
+      height: 420px;
+      background: url('../assets/images/sunset.jpeg');
+      background-size: cover;
+      background-position: 0 75%;
+    }
+#about {
+  display: grid;
+  grid-area: abt;
+  grid-template-columns: 1fr;
+  width: 100%;
+  padding: 0 60px;
+  background: linear-gradient(to bottom, #ee8165 10%, #999 90%);
+}
+#aboutpic {
+  display: grid;
+  grid-area: abt;
+  width: 100%;
+  
+}
 .Dancing {
   font-family: "Dancing Script", cursive;
   font-size: 2.1em;
   font-weight: 400;
   font-style: normal;
 }
+
 .social-icons {
   margin-top: 100px;
   margin-left: 100px;
